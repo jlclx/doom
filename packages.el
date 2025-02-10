@@ -47,3 +47,6 @@
 ;; (unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;; (unpin! t)
+
+;; Workaround for tab rendering failure https://github.com/doomemacs/doomemacs/issues/7904#issuecomment-2198633470
+(package! centaur-tabs :pin "d6009c295a4363930247ae9a4d1125aea4d3fd74" :recipe (:build (:not compile)))
