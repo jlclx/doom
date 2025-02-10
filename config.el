@@ -74,3 +74,11 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+;; Enable mouse usage.
+(xterm-mouse-mode 1)
+
+;; Enable scroll wheel scrolling.
+(map!
+   "<mouse-4>" #'scroll-down-line
+   "<mouse-5>" #'scroll-up-line)
